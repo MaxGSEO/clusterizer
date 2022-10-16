@@ -12,7 +12,7 @@ else:
     layout = "wide" if st.session_state.widen else "centered"
 
 # region format
-st.set_page_config(page_title="Semantic Keyword Clustering Tool - Patreon Beta 1", page_icon="✨", layout=layout)
+st.set_page_config(page_title="Semantic Keyword Clustering Tool", page_icon="✨", layout=layout)
 
 beta_limit = 1000000
 st.write("Web App Limited to First 10,000 Rows - Run Locally for More!")
