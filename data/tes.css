@@ -1,0 +1,16 @@
+[data-testid="stSidebarNav"] {
+    background-image: url('https://i.imgur.com/nNR42KX.png');
+    background-repeat: no-repeat;
+    background-size: 280px 180px;
+    padding-top: 120px;
+    background-position: 20px 20px;
+}
+
+[data-testid="stSidebarNav"]::before {
+    /*content: "My Company Name";*/
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    position: relative;
+    top: 100px;
+}

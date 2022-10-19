@@ -11,18 +11,32 @@ from stqdm import stqdm
 from trafilatura import bare_extraction
 from trafilatura.settings import use_config
 from user_agent import generate_user_agent
+from helpers import local_css
 
 st.set_page_config(
-    page_title="Striking Distance Creator V2 by LeeFootSEO",
-    page_icon="baseball",
-    layout="wide",
+    layout="centered",
+    page_title="Striking Distance Creator V2",
+    page_icon="https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_auto/https://studiomakoto.it/wp-content/uploads/2021/08/cropped-favicon-16x16-1-192x192.png",
+    menu_items={
+        "Get help": None,
+        "Report a bug": None,
+        "About": None
+    }
 )
-st.title("Striking Distance Creator V2")
+hide_st_style = """
+                    <style>
+                    footer {visibility: hidden;}
+                    [title^='streamlit_lottie.streamlit_lottie'] {
+                        margin-bottom: -35px;
+                        margin-top: -90px;
+                    }
+                    </style>
+                    """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+local_css("data/tes.css")
 st.subheader("Automatic On-page Checker for Keywords Close to Ranking")
 st.write(
     "An app which blends keyword data and crawl data to provide actionable insights for keywords close to ranking.")
-st.write(
-    "[![this is an image link](https://i.imgur.com/Ex8eeC2.png)](https://www.patreon.com/leefootseo) [Become a Patreon for Early Access, Support & More!](https://www.patreon.com/leefootseo)  |  Made in [![this is an image link](https://i.imgur.com/iIOA6kU.png)](https://www.streamlit.io/) by [@LeeFootSEO](https://twitter.com/LeeFootSEO)")
 st.write("")
 
 # set fake agent
