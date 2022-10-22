@@ -10,7 +10,7 @@ from stqdm import stqdm
 
 st.set_page_config(
     layout="wide",
-    page_title="Semantic Keyword Clustering Tool",
+    page_title="Keyword Difficulty Finder",
     page_icon="https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_auto/https://studiomakoto.it/wp-content/uploads/2021/08/cropped-favicon-16x16-1-192x192.png",
     menu_items={
         "Get help": None,
